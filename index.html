@@ -4,31 +4,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DJ AAKASH SAMASTIPUR</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Official DJ AAKASH Samastipur site. Bhojpuri remix, FLP projects, Hindi DJ songs, Bolbum DJ, Chhath DJ, and more." />
+  <meta name="keywords" content="DJ AAKASH, DJ Akash Samastipur, DJ remix, DJ song download, FL Studio projects, DJ Rakesh, DJ Sarzen, Bolbum remix, Bhojpuri DJ, Hindi DJ songs" />
+  <meta name="author" content="DJ AAKASH">
+
+  <!-- Social Preview -->
+  <meta property="og:title" content="DJ AAKASH - Official Remix Site" />
+  <meta property="og:description" content="Bhojpuri, Hindi DJ remix, and FL Studio files by DJ AAKASH Samastipur." />
+  <meta property="og:image" content="assets/banner.jpg" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(to right, #000000, #1c1c1c);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+    header {
+      background-image: url('assets/banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      z-index: 2;
+      color: #ff0000;
+    }
+    header p {
+      font-size: 1.5rem;
+      z-index: 2;
+    }
+    header img {
+      width: 200px;
+      margin-bottom: 20px;
+      z-index: 2;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 2px solid #ff0000;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+    }
+    .card audio {
+      width: 100%;
+      margin-top: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #ff0000;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <img src="assets/logo.png" alt="DJ AAKASH Logo">
     <h1>DJ AAKASH SAMASTIPUR</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="remixes.html">My Remixes</a></li>
-        <li><a href="flstudio.html">FL Studio Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <p>Vibes Beyond Words 🎧 | Bhojpuri & Hindi Remix</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome to DJ AAKASH SAMASTIPUR</h2>
-      <p>Here you can explore my exclusive remix tracks and FL Studio projects. Enjoy the vibes!</p>
-    </section>
-  </main>
+  <section>
+    <h2>🔥 Latest Releases</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Bolbum Trance Remix</h3>
+        <audio controls>
+          <source src="songs/bolbum.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="card">
+        <h3>Chhath Festival Beat</h3>
+        <audio controls>
+          <source src="songs/chhath.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎛️ Download FL Studio Projects</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Durga Puja EDM</h3>
+        <a href="flp/durga.flp" download style="color:#ff0000;">Download FLP</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 DJ AAKASH SAMASTIPUR. All rights reserved.</p>
+    <p>&copy; 2025 DJ AAKASH Samastipur | Designed with ❤️ in Bihar</p>
   </footer>
 </body>
 </html>
